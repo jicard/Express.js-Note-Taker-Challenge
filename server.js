@@ -12,7 +12,7 @@ app.use(express.json());
 
 // get notes.html and return data from the html to generate
 app.get("/notes", (req, res) => {
-  res.sendFile(path.join(__dirname, "/public/notes.html"));
+  res.sendFile(path.join(__dirname, "./public/notes.html"));
 });
 
 // Get notes by specific ID
